@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisa & Fils</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href=' https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="./css/index.css" rel="stylesheet" />
 </head>
@@ -16,53 +14,84 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg px-5 shadow-sm opacity-1  position-fixed w-100 bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./img/logo_lisaetfils.png" class="img-fluid"
-                        alt="lisaetfils"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link mx-2 active" aria-current="page" href="#">ACCUEIL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">À PROPOS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">NOS PRODUITS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">INOX</a></li>
-                                <li><a class="dropdown-item" href="#">SOLS</a></li>
-                                <li><a class="dropdown-item" href="#">PAROIS</a></li>
-                                <li><a class="dropdown-item" href="#">MAIN COURANTE</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">NOS REALISATIONS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav>
+            <div class="logo"><img src="./img/logo_lisaetfils.png" width="200px" alt="lisaetfils"></div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" id="icon">
+                <i id="nav-bars-icon" class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a data-section="home" href="#" class="active">Accueil</a></li>
+                <li><a data-section="about" href="#">A propos</a></li>
+                <li class="dropdown" data-dropdown="nos-produits">
+                    <a href="#">Nos produits</a>
+                    <div class="dropdown-content">
+                        <a href="#">Inox</a>
+                        <a href="#">Sols</a>
+                        <a href="#">Parois</a>
+                        <a href="#">Main courante</a>
+                    </div>
+                </li>
+                <li><a data-section="realisations" href="#">Nos réalisations</a></li>
+                <li><a data-section="contact" href="#">Contact</a></li>
+            </ul>
         </nav>
 
     </header>
     <main>
+        <section class="accueil">
+            <div class="cover">
 
+            </div>
+            <!-- padding 10% right&left pour class content -->
+            <div class="content">
+                <div class="accueil-realisation">
+                    <div class="accueil-partie-title"></div>
+                    <div class="caroussel"></div>
+                    <div class="voir-plus"></div>
+                </div>
+
+                <div class="accueil-produit">
+                    <div class="accueil-partie-title"></div>
+                    <div class="accueil-partie-subtitle"></div>
+                    <div class="list-produits">
+                        <div class="produits"></div>
+                        <div class="produits"></div>
+                        <div class="produits"></div>
+                        <div class="produits"></div>
+                    </div>
+                    <div class="voir-plus"></div>
+                </div>
+
+                <div class="accueil-chiffres">
+                    <div class="cadre-chiffres">
+                        <div class="item-chiffre"></div>
+                        <div class="item-chiffre"></div>
+                        <div class="item-chiffre"></div>
+                    </div>
+                </div>
+
+                <div class="accueil-contact">
+                    <div class="deuxparties">
+                        <div class="infos">
+
+                        </div>
+                        <div class="logo">
+
+                        </div>
+                    </div>
+                    <div class="horaires">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./js/script.js" text="text/javascript"></script>
 </body>
 
 </html>
