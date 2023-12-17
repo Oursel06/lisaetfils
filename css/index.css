@@ -1,0 +1,29 @@
+:root {
+    --blue-theme: #1f5da6;
+    --orange-theme: #d0671e;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins"
+}
+
+/* Barre de navigation */
+
+nav {
+    opacity: .9;
+}
+
+.nav-item .nav-link {
+    color: var(--blue-theme);
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    color: var(--orange-theme);
+}
