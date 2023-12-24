@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisa & Fils</title>
     <link href=' https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="./css/index.css" rel="stylesheet" />
 </head>
@@ -28,7 +28,7 @@
                     <div class="dropdown-content">
                         <a href="#">Inox</a>
                         <a href="#">Sols</a>
-                        <a href="#">Parois</a>
+                        <a id="testt" href="#parois">Parois</a>
                         <a href="#">Main courante</a>
                     </div>
                 </li>
@@ -39,10 +39,16 @@
 
     </header>
     <main>
-        <section id="accueil">
-            <div class="cover">
-
+        <div class="overflow hidden"></div>
+        <div id="modal">
+            <div class="image-modal-header">
+                <p></p>
+                <i style="cursor: pointer;" class="fa fa-close"></i>
             </div>
+            <img src="" alt="inox">
+        </div>
+        <!-- <section id="accueil">
+            <div class="cover"></div>
             <div class="content">
                 <div class="accueil-partie">
                     <div class="accueil-partie-title">
@@ -72,20 +78,20 @@
                         </div>
                         <div class="produit">
                             <a href="#">
-                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="inox">
+                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="paroi">
                                 <p class="nom-produit">Parois</p>
                             </a>
 
                         </div>
                         <div class="produit">
                             <a href="#">
-                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="inox">
+                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="sol">
                                 <p class="nom-produit">Sols</p>
                             </a>
                         </div>
                         <div class="produit">
                             <a href="#">
-                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="inox">
+                                <img src="./img/produits/inox/inox_damier.jpg" class="img-ronde" alt="main courante">
                                 <p class="nom-produit">Main courante</p>
                             </a>
                         </div>
@@ -97,17 +103,17 @@
                 <div class="accueil-partie">
                     <div class="cadre-chiffres">
                         <div class="item-chiffre">
-                            <i class="fa fa-home"></i>
+                            <i class="fa fa-calendar-alt"></i>
                             <p><span class="chiffre">90+ </span><br> <span class="chiffre-detail">Années
                                     d'expérience</span></p>
                         </div>
                         <div class="item-chiffre">
-                            <i class="fa fa-home"></i>
+                            <i class="fa fa-screwdriver-wrench"></i>
                             <p><span class="chiffre">1000+ </span><br> <span class="chiffre-detail">Chantiers</span>
                             </p>
                         </div>
                         <div class="item-chiffre">
-                            <i class="fa fa-home"></i>
+                            <i class="fa fa-users"></i>
                             <p><span class="chiffre">100+ </span><br> <span class="chiffre-detail">Clients</span></p>
                         </div>
                     </div>
@@ -117,22 +123,229 @@
                 <div class="accueil-partie">
                     <div class="contact-content">
                         <div class="infos">
+                            <h2 class="title">Nous contacter</h2>
 
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a
+                                    href="https://www.google.com/maps/place/Etablissements+Lisa+et+Fils/@43.7171268,7.2825801,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdc5498d9f54a5:0x9d18bcdc6ac559bb!8m2!3d43.717123!4d7.285155!16s%2Fg%2F1tmk0txl?entry=ttu">6
+                                    Rue Joseph Arnaldi, 06300 Nice</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:ets.lisa@wanadoo.fr">ets.lisa@wanadoo.fr</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:0493894216">0493894216</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="ets_lisa_fils">ets_lisa_fils</a>
+                            </div>
                         </div>
-                        <div class="logo">
-
-                        </div>
+                        <img src="./img/ets_logo_rond.png" class="img-ronde" alt="sol">
                     </div>
                     <div class="contact-horaires">
-
+                        <h2 class="title">Horaires d'ouverture</h2>
+                        <span></span>
+                        <p>du lundi au jeudi de 7h à 16h30</p>
+                        <p>le vendredi de 7h à 11h30</p>
                     </div>
                 </div>
+            </div>
+        </section> -->
 
+        <section id="about">
+            <div class="container">
+                <div class="presentation">
+                    <div class="presentation-text">
+                        <h2>Etablissements Lisa&Fils</h2>
+                        <p> Depuis 1926, notre entreprise opère dans le secteur des ascensoristes en région PACA et
+                            Monaco, avec une clientèle diversifiée comprenant des partenaires tels qu'OTIS, KONE,
+                            SCHINDLER, TKE, EMR, ILEX, CMA, NSA, ainsi que des collaborations à Monaco avec l'Entreprise
+                            PASTOR, WOLZOK, architectes Monégasques et plusieurs syndics.</p>
+                        <p> Notre usine d’une superficie de 600 mètres carrés est située à Nice, à proximité de
+                            l'autoroute et de la voie rapide. </p>
+                        <p> Forte d'une équipe de 12 salariés qualifiés, notre entreprise se distingue en tant
+                            qu'entreprise familiale transmise de génération en génération. </p>
+                    </div>
+                    <div class="presentation-image">
+                        <img src="./img/produits/inox/inox_damier.jpg">
+                    </div>
+                </div>
+                <hr>
+                <div class="partie-title">
+                    <h2 class="title">Ce que nous proposons</h2>
+                </div>
+                <div class="list-services">
+                    <div class="carte-service">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="test">
+                        <p class="service-title">Pièce métallique</p>
+                    </div>
+                    <div class="carte-service">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="test">
+                        <p class="service-title">Soudure</p>
+                    </div>
+                    <div class="carte-service">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="test">
+                        <p class="service-title">Poinçonnage</p>
+                    </div>
+                    <div class="carte-service">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="test">
+                        <p class="service-title">Pliage</p>
+                    </div>
+                    <div class="carte-service">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="test">
+                        <p class="service-title">Fabrication rapide</p>
+                        <p class="service-description">Service rapide de fabrications atelier et remplacements de pièces
+                            métalliques liés à l’ascenseur.</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+
+        <!-- <section id="inox">
+            <div class="container">
+                <div class="list-produits-type">
+
+                    <script type="text/javascript">
+                        fetch("./data/inox.json").then(res => {
+                            if (!res.ok) {
+                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
+                            }
+                            return res.json();
+                        }).then(donnees => {
+                            let cardProduit = '';
+                            for (let i = 0; i < donnees.length; i++) {
+                                let inox = donnees[i];
+                                cardProduit += `
+                                <div class="carte-produit image-zoom" data-categorie="${inox.categorie}">
+                                    <img src="${inox.img}" alt="${inox.categorie}" />
+                                    <p>${inox.libelle}</p>
+                                </div>
+                                `;
+                            }
+                            $(".list-produits-type").html(cardProduit);
+
+                            $('.image-zoom').click(function () {
+                                $('#modal').show().toggleClass('animate');
+                                $('.overflow').removeClass("hidden");
+                                $("#modal img").attr('src', $(this).find('img').attr('src'));
+                                $("#modal p").html($(this).find('p').text());
+                            });
+
+                        }).catch(err => {
+                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
+                        })
+                    </script>
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="sol">
+            <div class="container">
+                <div class="list-produits-type">
+
+                    <script type="text/javascript">
+                        fetch("./data/sol.json").then(res => {
+                            if (!res.ok) {
+                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
+                            }
+                            return res.json();
+                        }).then(donnees => {
+                            let cardProduit = '';
+                            for (let i = 0; i < donnees.length; i++) {
+                                let sol = donnees[i];
+                                cardProduit += `
+                                <div class="carte-produit image-zoom" data-categorie="${sol.categorie}">
+                                    <img src="${sol.img}" alt="${sol.categorie}" />
+                                    <p>${sol.libelle}</p>
+                                </div>
+                                `;
+                            }
+                            $(".list-produits-type").html(cardProduit);
+
+                            $('.image-zoom').click(function () {
+                                $('#modal').show().toggleClass('animate');
+                                $('.overflow').removeClass("hidden");
+                                $("#modal img").attr('src', $(this).find('img').attr('src'));
+                                $("#modal p").html($(this).find('p').text());
+                            });
+
+                        }).catch(err => {
+                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
+                        })
+                    </script>
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="parois">
+            <div class="container">
+                <div class="list-produits-type">
+                    <script type="text/javascript">
+                        fetch("./data/parois.json").then(res => {
+                            if (!res.ok) {
+                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
+                                $('#parois').addClass('hidden');
+                            }
+                            return res.json();
+                        }).then(donnees => {
+                            let cardProduit = '';
+                            for (let i = 0; i < donnees.length; i++) {
+                                let parois = donnees[i];
+                                cardProduit += `
+                                <div class="carte-produit image-zoom" data-categorie="${parois.categorie}">
+                                    <img src="${parois.img}" alt="${parois.categorie}" />
+                                    <p>${parois.libelle}</p>
+                                </div>
+                                `;
+                            }
+                            $(".list-produits-type").html(cardProduit);
+                            $('.image-zoom').click(function () {
+                                $('#modal').show().toggleClass('animate');
+                                $('.overflow').removeClass("hidden");
+                                $("#modal img").attr('src', $(this).find('img').attr('src'));
+                                $("#modal p").html($(this).find('p').text());
+                            });
+                            $('#parois').addClass('hidden');
+
+                        }).catch(err => {
+                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
+                            $('#parois').addClass('hidden');
+                        })
+                    </script> -->
+
+        </div>
+        </div>
+        </section>
+
+        <!-- <section id="main-courante">
+            <div class="container">
+                <div class="list-produits">
+                    <div class="carte-produit image-zoom">
+                        <img src="./img/produits/inox/inox_damier.jpg" alt="Main courante" />
+                        <p>Main courante</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
     </main>
     <footer>
-
+        <p>Nous suivre sur :</p>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="documents">
+            <a href="">doc</a> |
+            <a href="">doc2</a> |
+            <a href="">doc3</a> |
+            <a href="">doc4</a> |
+        </div>
+        <p>Copyright © 2024 <strong> Etablissements Lisa et Fils</strong></p>
     </footer>
     <script src="./js/script.js" text="text/javascript"></script>
 </body>

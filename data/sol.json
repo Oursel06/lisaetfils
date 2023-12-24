@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "libelle": "sol",
+        "img": "../img/",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 2,
+        "libelle": "sol2",
+        "img": "../img/",
+        "categorie": "caoutchouc"
+    },
+    {
+        "id": 3,
+        "libelle": "sol3",
+        "img": "../img/",
+        "categorie": "stratifié"
+    }
+]

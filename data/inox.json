@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "libelle": "inox1",
+        "img": "../img/",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 2,
+        "libelle": "inox2",
+        "img": "../img/",
+        "categorie": "verre"
+    },
+    {
+        "id": 3,
+        "libelle": "inox3",
+        "img": "../img/",
+        "categorie": "stratifié"
+    }
+]
