@@ -345,18 +345,21 @@ ul li a.active {
     font-weight: 600;
 }
 
-#accueil .contact-content {
+#accueil .contact-content,
+#contact .contact-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-#accueil .contact-content .infos {
+#accueil .contact-content .infos,
+#contact .contact-content .infos {
     padding: 10px;
 }
 
-#accueil .contact-content .infos .info-item {
+#accueil .contact-content .infos .info-item,
+#contact .contact-content .infos .info-item {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -364,13 +367,15 @@ ul li a.active {
     margin: 40px 0;
 }
 
-#accueil .contact-content .infos .info-item i {
+#accueil .contact-content .infos .info-item i,
+#contact .contact-content .infos .info-item i {
     font-size: 20px;
     margin-right: 20px;
     color: var(--orange-theme);
 }
 
-#accueil .contact-content .infos .info-item a {
+#accueil .contact-content .infos .info-item a,
+#contact .contact-content .infos .info-item a {
     font-size: 18px;
     text-decoration: none;
     color: var(--blue-theme);
@@ -387,7 +392,8 @@ ul li a.active {
     text-align: center;
 }
 
-#accueil .contact-horaires span {
+#accueil .contact-horaires span,
+#contact .contact-horaires span {
     display: inline-block;
     background: var(--blue-theme);
     margin: 20px 0;
@@ -395,7 +401,8 @@ ul li a.active {
     height: 4px;
 }
 
-#accueil .contact-horaires p {
+#accueil .contact-horaires p,
+#contact .contact-horaires p {
     color: var(--blue-theme);
     margin: 10px 0;
     font-size: 18px;
@@ -492,6 +499,13 @@ ul li a.active {
     color: var(--blue-theme);
     width: 100%;
     font-size: 16px;
+    text-align: center;
+}
+
+/* Contact */
+
+#contact .contact-horaires {
+    margin: 30px 0;
     text-align: center;
 }
 
