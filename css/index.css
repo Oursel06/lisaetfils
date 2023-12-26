@@ -489,7 +489,7 @@ ul li a.active {
 
 #produit .item-produit {
     width: 300px;
-    height: auto;
+    height: 350px;
     margin: 10px;
     text-align: center;
     box-shadow: 0 2px 14px 0px rgba(50, 50, 50, 0.2);
@@ -497,6 +497,8 @@ ul li a.active {
 
 #produit img {
     width: 100%;
+    height: 65%;
+    display: block;
 }
 
 #produit .choix-produits p {
