@@ -39,4 +39,12 @@ $(document).ready(function () {
         $('#accueil').addClass('hidden');
     });
 
+    // ************** Realisation ******************
+    $('.gallery-img').on('click', function () {
+        $('#modal').show().toggleClass('animate');
+        $('.overflow').removeClass("hidden");
+        $("#modal img").attr('src', $(this).attr('src'));
+        $("#modal p").html("Réalisation");
+    });
+
 })
