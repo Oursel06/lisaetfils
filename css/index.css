@@ -479,6 +479,36 @@ ul li a.active {
 
 /* Produits */
 
+#produit .choix-produits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#produit .item-produit {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 14px 0px rgba(50, 50, 50, 0.2);
+}
+
+#produit img {
+    width: 100%;
+}
+
+#produit .choix-produits p {
+    color: var(--blue-theme);
+    font-size: 20px;
+}
+
+#produit .choix-produits a {
+    text-decoration: none;
+    margin: 20px 0;
+}
+
 .list-produits-type .carte-produit {
     width: 220px;
     height: 180px;
