@@ -2717,5 +2717,4 @@
     };
     Flickity.PageDots = PageDots;
     return PageDots;
-
 }));
