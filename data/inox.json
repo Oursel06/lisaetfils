@@ -1,20 +1,38 @@
 [
     {
         "id": 1,
-        "libelle": "inox1",
-        "img": "../img/",
-        "categorie": "stratifié"
+        "libelle": "Alu champagne",
+        "img": "../img/produits/inox/alu_champagne.webp",
+        "categorie": "inox"
     },
     {
         "id": 2,
-        "libelle": "inox2",
-        "img": "../img/",
-        "categorie": "verre"
+        "libelle": "Brossé",
+        "img": "../img/produits/inox/inox_brosse.webp",
+        "categorie": "inox"
     },
     {
         "id": 3,
-        "libelle": "inox3",
-        "img": "../img/",
-        "categorie": "stratifié"
+        "libelle": "Damier",
+        "img": "../img/produits/inox/inox_damier.webp",
+        "categorie": "inox"
+    },
+    {
+        "id": 4,
+        "libelle": "Gravé",
+        "img": "../img/produits/inox/inox_grave.webp",
+        "categorie": "inox"
+    },
+    {
+        "id": 5,
+        "libelle": "Lin",
+        "img": "../img/produits/inox/inox_lin.webp",
+        "categorie": "inox"
+    },
+    {
+        "id": 6,
+        "libelle": "Poli miroir",
+        "img": "../img/produits/inox/inox_polimiroir.webp",
+        "categorie": "inox"
     }
 ]

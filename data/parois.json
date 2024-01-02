@@ -1,20 +1,152 @@
 [
     {
         "id": 1,
-        "libelle": "paroi1",
-        "img": "../img/",
+        "libelle": "668 Wood",
+        "img": "../img/produits/parois/strat/668_wood.webp",
         "categorie": "stratifié"
     },
     {
         "id": 2,
-        "libelle": "paroi2",
-        "img": "../img/",
-        "categorie": "verre"
+        "libelle": "788 Wood",
+        "img": "../img/produits/parois/strat/788_wood.webp",
+        "categorie": "stratifié"
     },
     {
         "id": 3,
-        "libelle": "paroi3",
-        "img": "../img/",
+        "libelle": "813 Wood",
+        "img": "../img/produits/parois/strat/813_wood.webp",
         "categorie": "stratifié"
+    },
+    {
+        "id": 4,
+        "libelle": "814 Wood",
+        "img": "../img/produits/parois/strat/814_wood.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 5,
+        "libelle": "815 Kynea",
+        "img": "../img/produits/parois/strat/815_kynea.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 6,
+        "libelle": "820 Kynea",
+        "img": "../img/produits/parois/strat/820_kynea.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 7,
+        "libelle": "1049 Magma",
+        "img": "../img/produits/parois/strat/1049_magma.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 8,
+        "libelle": "4100 Lucido",
+        "img": "../img/produits/parois/strat/4100_lucido.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 9,
+        "libelle": "4111 Lucido",
+        "img": "../img/produits/parois/strat/4111_lucido.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 10,
+        "libelle": "5052 Lucido",
+        "img": "../img/produits/parois/strat/5052_lucido.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 11,
+        "libelle": "5054 Lucido",
+        "img": "../img/produits/parois/strat/5054_lucido.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 12,
+        "libelle": "5070 Shiky",
+        "img": "../img/produits/parois/strat/5070_shiky.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 13,
+        "libelle": "5071 Shiky",
+        "img": "../img/produits/parois/strat/5071_shiky.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 14,
+        "libelle": "6087 Velvet",
+        "img": "../img/produits/parois/strat/6087_velvet.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 15,
+        "libelle": "6090 Shiky",
+        "img": "../img/produits/parois/strat/6090_shiky.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 16,
+        "libelle": "6096 Shiky",
+        "img": "../img/produits/parois/strat/6096_shiky.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 17,
+        "libelle": "6099 Velvet",
+        "img": "../img/produits/parois/strat/6099_velvet.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 18,
+        "libelle": "Beige light",
+        "img": "../img/produits/parois/verre/beige_light.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 19,
+        "libelle": "Black star light",
+        "img": "../img/produits/parois/verre/black_starlight.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 20,
+        "libelle": "Grey metal",
+        "img": "../img/produits/parois/verre/grey_metal.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 21,
+        "libelle": "Taupe metal",
+        "img": "../img/produits/parois/verre/taupe_metal.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 22,
+        "libelle": "White pur",
+        "img": "../img/produits/parois/verre/white_pur.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 23,
+        "libelle": "",
+        "img": "../img/produits/parois/verre/verre1.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 24,
+        "libelle": "",
+        "img": "../img/produits/parois/verre/verre2.webp",
+        "categorie": "verre"
+    },
+    {
+        "id": 25,
+        "libelle": "",
+        "img": "../img/produits/parois/verre/verre3.webp",
+        "categorie": "verre"
     }
 ]

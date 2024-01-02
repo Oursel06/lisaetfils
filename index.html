@@ -28,7 +28,7 @@
                     <div class="dropdown-content">
                         <a href="#">Inox</a>
                         <a href="#">Sols</a>
-                        <a id="testt" href="#parois">Parois</a>
+                        <a href="#parois">Parois</a>
                         <a href="#">Main courante</a>
                     </div>
                 </li>
@@ -47,7 +47,7 @@
             </div>
             <img loading="lazy" src="">
         </div>
-        <section id="accueil">
+        <!-- <section id="accueil">
             <div class="cover"></div>
             <div class="content">
                 <div class="accueil-partie">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- <section id="about">
             <div class="container">
@@ -251,8 +251,11 @@
             </div>
         </section> -->
 
-        <!-- <section id="inox">
+        <section id="inox">
             <div class="container">
+                <div class="title-produit">
+                    <h2 class="title">Nos inox</h2>
+                </div>
                 <div class="list-produits-type">
 
                     <script type="text/javascript">
@@ -288,12 +291,21 @@
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section id="sol">
             <div class="container">
+                <div class="title-produit">
+                    <h2 class="title">Nos sols</h2>
+                </div>
+                <div class="filtre-produits">
+                    <button type="button" data-filter="stratifié" class="btn-filtre active">Stratifié</button>
+                    <button type="button" data-filter="granito" class="btn-filtre">Granito</button>
+                    <button type="button" data-filter="caoutchouc" class="btn-filtre">Caoutchouc</button>
+                    <button type="button" data-filter="alu" class="btn-filtre">Alu</button>
+                    <button type="button" data-filter="inox" class="btn-filtre">Inox larmé</button>
+                </div>
                 <div class="list-produits-type">
-
                     <script type="text/javascript">
                         fetch("./data/sol.json").then(res => {
                             if (!res.ok) {
@@ -313,6 +325,12 @@
                             }
                             $(".list-produits-type").html(cardProduit);
 
+                            $('.carte-produit').each(function () {
+                                if ($(this).data("categorie") != "stratifié") {
+                                    $(this).addClass('hidden');
+                                }
+                            });
+
                             $('.image-zoom').click(function () {
                                 $('#modal').show().toggleClass('animate');
                                 $('.overflow').removeClass("hidden");
@@ -331,12 +349,18 @@
 
         <!-- <section id="parois">
             <div class="container">
+                <div class="title-produit">
+                    <h2 class="title">Nos Parois</h2>
+                </div>
+                <div class="filtre-produits">
+                    <button type="button" data-filter="stratifié" class="btn-filtre active">Stratifié</button>
+                    <button type="button" data-filter="verre" class="btn-filtre">Verre</button>
+                </div>
                 <div class="list-produits-type">
                     <script type="text/javascript">
                         fetch("./data/parois.json").then(res => {
                             if (!res.ok) {
                                 $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
-                                $('#parois').addClass('hidden');
                             }
                             return res.json();
                         }).then(donnees => {
@@ -351,30 +375,42 @@
                                 `;
                             }
                             $(".list-produits-type").html(cardProduit);
+                            $('.carte-produit').each(function () {
+                                if ($(this).data("categorie") != "stratifié") {
+                                    $(this).addClass('hidden');
+                                }
+                            });
                             $('.image-zoom').click(function () {
                                 $('#modal').show().toggleClass('animate');
                                 $('.overflow').removeClass("hidden");
                                 $("#modal img").attr('src', $(this).find('img').attr('src'));
                                 $("#modal p").html($(this).find('p').text());
                             });
-                            $('#parois').addClass('hidden');
 
                         }).catch(err => {
                             $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
-                            $('#parois').addClass('hidden');
                         })
-                    </script> 
+                    </script>
 
                 </div>
             </div>
-        </section>-->
+        </section> -->
 
         <!-- <section id="main-courante">
             <div class="container">
-                <div class="list-produits">
-                    <div class="carte-produit image-zoom">
-                        <img loading="lazy" src="./img/produits/inox/inox_damier.webp" alt="Main courante" />
-                        <p>Main courante</p>
+                <div class="title-produit">
+                    <h2 class="title">Mains courantes</h2>
+                    <p>Nos mains courantes sont toutes en inox de diamètre 42.</p>
+                </div>
+                <div class="list-produits-type">
+                    <div class="carte-produit-mc image-zoom">
+                        <img loading="lazy" src="./img/produits/mc/mc1.webp" alt="main courante">
+                    </div>
+                    <div class="carte-produit-mc image-zoom">
+                        <img loading="lazy" src="./img/produits/mc/mc2.webp" alt="main courante">
+                    </div>
+                    <div class="carte-produit-mc image-zoom">
+                        <img loading="lazy" src="./img/produits/mc/mc3.webp" alt="main courante">
                     </div>
                 </div>
             </div>

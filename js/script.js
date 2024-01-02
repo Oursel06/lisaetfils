@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     // ************** Produits ******************
 
-    $('.list-produits-type').css("min-height", screen.height - ($("footer").height() * 3 + 69));
+    $('.list-produits-type').css("min-height", screen.height - ($("footer").height() * 4 - 38));
 
     $('.image-zoom').click(function () {
         $('#modal').show().toggleClass('animate');
@@ -34,12 +34,22 @@ $(document).ready(function () {
         $('#modal').toggleClass('animate').hide(50);
     });
 
-    $('#testt').click(function () {
-        $('#parois').removeClass('hidden');
-        $('#accueil').addClass('hidden');
+    $(".btn-filtre").click(function () {
+        $(".btn-filtre").removeClass("active");
+        $(this).addClass("active");
+        var categorie = $(this).data("filter");
+        $('.carte-produit').each(function () {
+            if ($(this).data("categorie") != categorie) {
+                $(this).addClass('hidden');
+            }
+            else {
+                $(this).removeClass('hidden');
+            }
+        });
     });
 
     // ************** Realisation ******************
+
     $('.gallery-img').on('click', function () {
         $('#modal').show().toggleClass('animate');
         $('.overflow').removeClass("hidden");

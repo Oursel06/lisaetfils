@@ -1,20 +1,104 @@
 [
     {
         "id": 1,
-        "libelle": "sol",
-        "img": "../img/",
+        "libelle": "803 Koral",
+        "img": "../img/produits/sols/strat/803_koral.webp",
         "categorie": "stratifié"
     },
     {
         "id": 2,
-        "libelle": "sol2",
-        "img": "../img/",
-        "categorie": "caoutchouc"
+        "libelle": "5057 Grip",
+        "img": "../img/produits/sols/strat/5057_grip.webp",
+        "categorie": "stratifié"
     },
     {
         "id": 3,
-        "libelle": "sol3",
-        "img": "../img/",
+        "libelle": "5099 Grip",
+        "img": "../img/produits/sols/strat/5099_grip.webp",
         "categorie": "stratifié"
+    },
+    {
+        "id": 4,
+        "libelle": "5545 Koral",
+        "img": "../img/produits/sols/strat/5545_koral.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 5,
+        "libelle": "6054 Koral",
+        "img": "../img/produits/sols/strat/6054_koral.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 6,
+        "libelle": "6070 Koral",
+        "img": "../img/produits/sols/strat/6070_koral.webp",
+        "categorie": "stratifié"
+    },
+    {
+        "id": 7,
+        "libelle": "7386 Savana",
+        "img": "../img/produits/sols/caoutchouc/7386_savana.webp",
+        "categorie": "caoutchouc"
+    },
+    {
+        "id": 8,
+        "libelle": "7801 Noir",
+        "img": "../img/produits/sols/caoutchouc/7801_noir.webp",
+        "categorie": "caoutchouc"
+    },
+    {
+        "id": 9,
+        "libelle": "8709 Granite",
+        "img": "../img/produits/sols/caoutchouc/8709_granite.webp",
+        "categorie": "caoutchouc"
+    },
+    {
+        "id": 10,
+        "libelle": "8717 Obsidian",
+        "img": "../img/produits/sols/caoutchouc/8717_obsidian.webp",
+        "categorie": "caoutchouc"
+    },
+    {
+        "id": 11,
+        "libelle": "Black star",
+        "img": "../img/produits/sols/granito/black_star.webp",
+        "categorie": "granito"
+    },
+    {
+        "id": 12,
+        "libelle": "Crema luna",
+        "img": "../img/produits/sols/granito/crema_luna.webp",
+        "categorie": "granito"
+    },
+    {
+        "id": 13,
+        "libelle": "Dark chocolate",
+        "img": "../img/produits/sols/granito/dark_chocolate.webp",
+        "categorie": "granito"
+    },
+    {
+        "id": 14,
+        "libelle": "Dove tail",
+        "img": "../img/produits/sols/granito/dove_tail.webp",
+        "categorie": "granito"
+    },
+    {
+        "id": 15,
+        "libelle": "White star",
+        "img": "../img/produits/sols/granito/white_star.webp",
+        "categorie": "granito"
+    },
+    {
+        "id": 16,
+        "libelle": "Alu strié",
+        "img": "../img/produits/sols/sol_alu_strie.webp",
+        "categorie": "alu"
+    },
+    {
+        "id": 17,
+        "libelle": "Inox larmé",
+        "img": "../img/produits/sols/sol_inox_larme.webp",
+        "categorie": "inox"
     }
 ]
