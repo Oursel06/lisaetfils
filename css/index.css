@@ -604,7 +604,7 @@ ul li a.active {
 #about .presentation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 500px;
 }
 
@@ -1101,6 +1101,10 @@ footer .copyright {
 
     #realisation .gallery {
         display: flex;
+        flex-direction: column;
+    }
+
+    #contact .contact-content {
         flex-direction: column;
     }
 
