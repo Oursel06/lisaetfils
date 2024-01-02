@@ -7,7 +7,6 @@
     <title>Lisa & Fils</title>
     <link href=' https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
@@ -21,19 +20,19 @@
                 <i id="nav-bars-icon" class="fa fa-bars"></i>
             </label>
             <ul>
-                <li><a data-section="home" href="#" class="active">Accueil</a></li>
-                <li><a data-section="about" href="#">A propos</a></li>
+                <li><a data-section="accueil" href="#accueil" class="link-section active">Accueil</a></li>
+                <li><a data-section="about" href="#about" class="link-section">A propos</a></li>
                 <li class="dropdown" data-dropdown="nos-produits">
-                    <a href="#">Nos produits</a>
+                    <a data-section="produit" href="#produits" class="link-section">Nos produits</a>
                     <div class="dropdown-content">
-                        <a href="#">Inox</a>
-                        <a href="#">Sols</a>
-                        <a href="#parois">Parois</a>
-                        <a href="#">Main courante</a>
+                        <a data-section="inox" href="#inox" class="link-section">Inox</a>
+                        <a data-section="sol" href="#sols" class="link-section">Sols</a>
+                        <a data-section="paroi" href="#parois" class="link-section">Parois</a>
+                        <a data-section="main-courante" href="#main-courante" class="link-section">Main courante</a>
                     </div>
                 </li>
-                <li><a data-section="realisations" href="#">Nos réalisations</a></li>
-                <li><a data-section="contact" href="#">Contact</a></li>
+                <li><a data-section="realisation" href="#realisations" class="link-section">Nos réalisations</a></li>
+                <li><a data-section="contact" href="#contact" class="link-section">Contact</a></li>
             </ul>
         </nav>
 
@@ -47,7 +46,7 @@
             </div>
             <img loading="lazy" src="">
         </div>
-        <!-- <section id="accueil">
+        <section id="accueil">
             <div class="cover"></div>
             <div class="content">
                 <div class="accueil-partie">
@@ -64,7 +63,8 @@
                         </div>
                     </div>
                     <div class="voir-plus">
-                        <a class="btn">Découvrir nos réalisations</a>
+                        <a data-section="realisation" href="#realisations" class="link-section btn">Découvrir nos
+                            réalisations</a>
                     </div>
                 </div>
                 <hr>
@@ -79,14 +79,14 @@
                     </div>
                     <div class="list-produits">
                         <div class="produit">
-                            <a href="#">
+                            <a data-section="inox" href="#inox" class="link-section">
                                 <img loading="lazy" src="./img/produits/inox/inox_damier.webp" class="img-ronde"
                                     alt="inox">
                                 <p class="nom-produit">Inox</p>
                             </a>
                         </div>
                         <div class="produit">
-                            <a href="#">
+                            <a data-section="paroi" href="#parois" class="link-section">
                                 <img loading="lazy" src="./img/produits/parois/strat/5052_lucido.webp" class="img-ronde"
                                     alt="paroi">
                                 <p class="nom-produit">Parois</p>
@@ -94,21 +94,23 @@
 
                         </div>
                         <div class="produit">
-                            <a href="#">
+                            <a data-section="sol" href="#sols" class="link-section">
                                 <img loading="lazy" src="./img/produits/sols/strat/6054_koral.webp" class="img-ronde"
                                     alt="sol">
                                 <p class="nom-produit">Sols</p>
                             </a>
                         </div>
                         <div class="produit">
-                            <a href="#">
+                            <a data-section="main-courante" href="#main-courante" class="link-section">
                                 <img loading="lazy" src="./img/produits/mc/mc2.webp" class="img-ronde"
                                     alt="main courante">
                                 <p class="nom-produit">Main courante</p>
                             </a>
                         </div>
                     </div>
-                    <div class="voir-plus"><a class="btn">Découvrir nos produits</a></div>
+                    <div class="voir-plus"><a data-section="produit" href="#produits" class="link-section btn">Découvrir
+                            nos produits</a>
+                    </div>
                 </div>
                 <hr>
 
@@ -153,7 +155,7 @@
                             </div>
                             <div class="info-item">
                                 <i class="fa-brands fa-instagram"></i>
-                                <a href="ets_lisa_fils">ets_lisa_fils</a>
+                                <a href="https://www.instagram.com/ets_lisa_fils">ets_lisa_fils</a>
                             </div>
                         </div>
                         <img loading="lazy" src="./img/ets_logo_rond.webp" class="img-ronde" alt="sol">
@@ -166,9 +168,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="about">
+        <section id="about">
             <div class="container">
                 <div class="presentation">
                     <div class="presentation-text">
@@ -215,9 +217,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="produit">
+        <section id="produit">
             <div class="container">
                 <div class="partie-title">
                     <h2 class="title">Nos produits</h2><br>
@@ -229,39 +231,39 @@
                     <div class="item-produit">
                         <img loading="lazy" src="./img/produits/inox/echantillon.webp" alt="inox">
                         <p class="nom-produit">Inox</p>
-                        <a href="#" class="btn">Voir plus</a>
+                        <a data-section="inox" href="#inox" class="link-section btn">Voir plus</a>
                     </div>
                     <div class="item-produit">
                         <img loading="lazy" src="./img/produits/parois/echantillon.webp" alt="paroi">
                         <p class="nom-produit">Parois</p>
-                        <a href="#" class="btn">Voir plus</a>
+                        <a data-section="paroi" href="#parois" class="link-section btn">Voir plus</a>
 
                     </div>
                     <div class="item-produit">
                         <img loading="lazy" src="./img/produits/sols/echantillons.webp" alt="sol">
                         <p class="nom-produit">Sols</p>
-                        <a href="#" class="btn">Voir plus</a>
+                        <a data-section="sol" href="#sols" class="link-section btn">Voir plus</a>
                     </div>
                     <div class="item-produit">
                         <img loading="lazy" src="./img/produits/mc/mc1.webp" alt="main courante">
                         <p>Mains courantes</p>
-                        <a href="#" class="btn">Voir plus</a>
+                        <a data-section="main-courante" href="#main-courante" class="link-section btn">Voir plus</a>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="inox">
             <div class="container">
                 <div class="title-produit">
                     <h2 class="title">Nos inox</h2>
                 </div>
-                <div class="list-produits-type">
+                <div class="list-produits-type-inox">
 
                     <script type="text/javascript">
                         fetch("./data/inox.json").then(res => {
                             if (!res.ok) {
-                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
+                                $(".list-produits-type-inox").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
                             }
                             return res.json();
                         }).then(donnees => {
@@ -269,23 +271,23 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let inox = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit image-zoom" data-categorie="${inox.categorie}">
+                                <div class="carte-produit-inox image-zoom" data-categorie="${inox.categorie}">
                                     <img loading="lazy" src="${inox.img}" alt="${inox.categorie}" />
                                     <p>${inox.libelle}</p>
                                 </div>
                                 `;
                             }
-                            $(".list-produits-type").html(cardProduit);
+                            $(".list-produits-type-inox").html(cardProduit);
 
                             $('.image-zoom').click(function () {
-                                $('#modal').show().toggleClass('animate');
+                                $('#modal').removeClass("hidden").addClass('animate');
                                 $('.overflow').removeClass("hidden");
                                 $("#modal img").attr('src', $(this).find('img').attr('src'));
                                 $("#modal p").html($(this).find('p').text());
                             });
 
                         }).catch(err => {
-                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
+                            $(".list-produits-type-inox").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
                         })
                     </script>
 
@@ -293,23 +295,25 @@
             </div>
         </section>
 
-        <!-- <section id="sol">
+        <section id="sol">
             <div class="container">
                 <div class="title-produit">
                     <h2 class="title">Nos sols</h2>
                 </div>
                 <div class="filtre-produits">
-                    <button type="button" data-filter="stratifié" class="btn-filtre active">Stratifié</button>
-                    <button type="button" data-filter="granito" class="btn-filtre">Granito</button>
-                    <button type="button" data-filter="caoutchouc" class="btn-filtre">Caoutchouc</button>
-                    <button type="button" data-filter="alu" class="btn-filtre">Alu</button>
-                    <button type="button" data-filter="inox" class="btn-filtre">Inox larmé</button>
+                    <button type="button" data-produit="sol" data-filter="stratifié"
+                        class="btn-filtre active">Stratifié</button>
+                    <button type="button" data-produit="sol" data-filter="granito" class="btn-filtre">Granito</button>
+                    <button type="button" data-produit="sol" data-filter="caoutchouc"
+                        class="btn-filtre">Caoutchouc</button>
+                    <button type="button" data-produit="sol" data-filter="alu" class="btn-filtre">Alu</button>
+                    <button type="button" data-produit="sol" data-filter="inox" class="btn-filtre">Inox larmé</button>
                 </div>
-                <div class="list-produits-type">
+                <div class="list-produits-type-sol">
                     <script type="text/javascript">
                         fetch("./data/sol.json").then(res => {
                             if (!res.ok) {
-                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
+                                $(".list-produits-type-sol").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
                             }
                             return res.json();
                         }).then(donnees => {
@@ -317,50 +321,50 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let sol = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit image-zoom" data-categorie="${sol.categorie}">
+                                <div class="carte-produit-sol image-zoom" data-categorie="${sol.categorie}">
                                     <img loading="lazy" src="${sol.img}" alt="${sol.categorie}" />
                                     <p>${sol.libelle}</p>
                                 </div>
                                 `;
                             }
-                            $(".list-produits-type").html(cardProduit);
-
-                            $('.carte-produit').each(function () {
-                                if ($(this).data("categorie") != "stratifié") {
-                                    $(this).addClass('hidden');
-                                }
-                            });
+                            $(".list-produits-type-sol").html(cardProduit);
 
                             $('.image-zoom').click(function () {
-                                $('#modal').show().toggleClass('animate');
+                                $('#modal').removeClass("hidden").addClass('animate');
                                 $('.overflow').removeClass("hidden");
                                 $("#modal img").attr('src', $(this).find('img').attr('src'));
                                 $("#modal p").html($(this).find('p').text());
                             });
 
+                            $('.carte-produit-sol').each(function () {
+                                if ($(this).data("categorie") != "stratifié") {
+                                    $(this).addClass('hidden');
+                                }
+                            });
                         }).catch(err => {
-                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
+                            $(".list-produits-type-sol").html("<p> Une erreur est survenue lors de la récupération des sols, veuillez rééssayer plus tard. </p>");
                         })
                     </script>
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="parois">
+        <section id="paroi">
             <div class="container">
                 <div class="title-produit">
                     <h2 class="title">Nos Parois</h2>
                 </div>
                 <div class="filtre-produits">
-                    <button type="button" data-filter="stratifié" class="btn-filtre active">Stratifié</button>
-                    <button type="button" data-filter="verre" class="btn-filtre">Verre</button>
+                    <button type="button" data-produit="paroi" data-filter="stratifié"
+                        class="btn-filtre active">Stratifié</button>
+                    <button type="button" data-produit="paroi" data-filter="verre" class="btn-filtre">Verre</button>
                 </div>
-                <div class="list-produits-type">
+                <div class="list-produits-type-paroi">
                     <script type="text/javascript">
                         fetch("./data/parois.json").then(res => {
                             if (!res.ok) {
-                                $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
+                                $(".list-produits-type-paroi").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
                             }
                             return res.json();
                         }).then(donnees => {
@@ -368,41 +372,42 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let parois = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit image-zoom" data-categorie="${parois.categorie}">
+                                <div class="carte-produit-paroi image-zoom" data-categorie="${parois.categorie}">
                                     <img loading="lazy" src="${parois.img}" alt="${parois.categorie}" />
                                     <p>${parois.libelle}</p>
                                 </div>
                                 `;
                             }
-                            $(".list-produits-type").html(cardProduit);
-                            $('.carte-produit').each(function () {
-                                if ($(this).data("categorie") != "stratifié") {
-                                    $(this).addClass('hidden');
-                                }
-                            });
+                            $(".list-produits-type-paroi").html(cardProduit);
+
                             $('.image-zoom').click(function () {
-                                $('#modal').show().toggleClass('animate');
+                                $('#modal').removeClass("hidden").addClass('animate');
                                 $('.overflow').removeClass("hidden");
                                 $("#modal img").attr('src', $(this).find('img').attr('src'));
                                 $("#modal p").html($(this).find('p').text());
                             });
 
+                            $('.carte-produit-paroi').each(function () {
+                                if ($(this).data("categorie") != "stratifié") {
+                                    $(this).addClass('hidden');
+                                }
+                            });
                         }).catch(err => {
-                            $(".list-produits-type").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
+                            $(".list-produits-type-paroi").html("<p> Une erreur est survenue lors de la récupération des parois, veuillez rééssayer plus tard. </p>");
                         })
                     </script>
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="main-courante">
+        <section id="main-courante">
             <div class="container">
                 <div class="title-produit">
                     <h2 class="title">Mains courantes</h2>
                     <p>Nos mains courantes sont toutes en inox de diamètre 42.</p>
                 </div>
-                <div class="list-produits-type">
+                <div class="list-produits-type-mc">
                     <div class="carte-produit-mc image-zoom">
                         <img loading="lazy" src="./img/produits/mc/mc1.webp" alt="main courante">
                     </div>
@@ -414,9 +419,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="realisation">
+        <section id="realisation">
             <div class="container">
                 <div class="gallery">
                     <figure class="gallery-item gallery-item-1">
@@ -453,9 +458,9 @@
                     </figure>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="contact">
+        <section id="contact">
             <div class="container">
                 <div class="contact-content">
                     <div class="infos">
@@ -488,20 +493,29 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
     </main>
     <footer>
-        <p>Nous suivre sur :</p>
-        <i class="fa-brands fa-instagram"></i>
+        <p class="follow">Nous suivre sur</p>
+        <a href="https://www.instagram.com/ets_lisa_fils"><img src="./img/insta_logo.svg"></a>
         <div class="documents">
-            <a href="">doc</a> |
-            <a href="">doc2</a> |
-            <a href="">doc3</a> |
-            <a href="">doc4</a> |
+            <a target="_blank" href="./doc/attestation_actradis.pdf">Attestation Actradis</a>
+            <span class="separator">|</span>
+            <a target="_blank" href="./doc/attestation_formation_habilitation_electrique18_510_H0V.pdf">Attestation
+                formation habilitation electrique</a>
+            <span class="separator">|</span>
+            <a target="_blank" href="./doc/attestation_uimm.pdf">Attestation UIMM</a>
+            <span class="separator">|</span>
+            <a target="_blank"
+                href="./doc/convention_formation_securite_risques_interventions_ascenseurs.pdf">Convention formation
+                sécurité ascenseurs</a>
         </div>
-        <p>Copyright © 2024 <strong> Etablissements Lisa et Fils</strong></p>
+        <p class="copyright">© <strong> Etablissements Lisa et Fils</strong> 2024 | Design par <a
+                href="https://devalex.site">DEVALEX</a>
+        </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/script.js" text="text/javascript"></script>
     <script src="./js/flickity.js" text="text/javascript"></script>
 </body>

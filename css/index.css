@@ -46,7 +46,10 @@ hr {
     padding: 1px;
 }
 
-.list-produits-type,
+.list-produits-type-inox,
+.list-produits-type-sol,
+.list-produits-type-paroi,
+.list-produits-type-mc,
 .list-services {
     display: flex;
     flex-direction: row;
@@ -73,6 +76,7 @@ hr {
     border-radius: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
     display: inline-block;
     color: white;
     transition: all .3s ease;
@@ -104,11 +108,11 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    height: 92%;
+    height: 100%;
     z-index: 5;
     background: black;
     opacity: 0;
-    transition: all .2s;
+    transition: all 2s;
     box-shadow: 0 1px 20px 0px rgba(50, 50, 50, 0.5);
 }
 
@@ -711,7 +715,8 @@ ul li a.active {
     border: solid 1px whitesmoke;
     margin: 0 -2px;
     background: white;
-    color: var(--text-color);
+    color: var(--blue-theme);
+    font-size: 20px;
     transition: all .3s ease;
 }
 
@@ -744,7 +749,9 @@ ul li a.active {
     line-height: 40px;
 }
 
-.list-produits-type .carte-produit {
+.list-produits-type-inox .carte-produit-inox,
+.list-produits-type-sol .carte-produit-sol,
+.list-produits-type-paroi .carte-produit-paroi {
     width: 220px;
     height: 180px;
     margin: 20px;
@@ -752,7 +759,7 @@ ul li a.active {
     transition: all .3s ease;
 }
 
-.list-produits-type .carte-produit-mc {
+.list-produits-type-mc .carte-produit-mc {
     width: 250px;
     height: 200px;
     margin: 20px;
@@ -760,23 +767,29 @@ ul li a.active {
     transition: all .3s ease;
 }
 
-.list-produits-type .carte-produit:hover,
-.list-produits-type .carte-produit-mc:hover {
+.list-produits-type-inox .carte-produit-inox:hover,
+.list-produits-type-sol .carte-produit-sol:hover,
+.list-produits-type-paroi .carte-produit-paroi:hover,
+.list-produits-type-mc .carte-produit-mc:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.list-produits-type .carte-produit img {
+.list-produits-type-inox .carte-produit-inox img,
+.list-produits-type-sol .carte-produit-sol img,
+.list-produits-type-paroi .carte-produit-paroi img {
     width: 100%;
     height: 140px;
 }
 
-.list-produits-type .carte-produit-mc img {
+.list-produits-type-mc .carte-produit-mc img {
     width: 100%;
     height: 100%;
 }
 
-.list-produits-type .carte-produit p {
+.list-produits-type-inox .carte-produit-inox p,
+.list-produits-type-sol .carte-produit-sol p,
+.list-produits-type-paroi .carte-produit-paroi p {
     color: var(--blue-theme);
     width: 100%;
     font-size: 16px;
@@ -798,7 +811,7 @@ ul li a.active {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: all .2s;
+    transition: all .3s ease;
 }
 
 #realisation .gallery-img:hover {
@@ -883,13 +896,25 @@ footer {
     width: 100%;
     height: 200px;
     text-align: center;
-    font-size: 18px;
     color: white;
 }
 
-footer i,
-footer p {
+footer img {
+    margin-bottom: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+footer .follow {
+    font-size: 16px;
     margin: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s ease;
 }
 
 footer div {
@@ -901,14 +926,21 @@ footer div {
 }
 
 footer div a {
-    color: white;
     margin: 0 10px;
-    text-decoration: none;
+}
+
+footer div a:hover,
+footer a:hover {
+    color: var(--orange-theme);
+    text-decoration: underline;
+}
+
+footer .copyright {
+    margin-top: 20px;
 }
 
 
 /* Responsive */
-
 
 @media screen and (max-width: 1366px) {
 
@@ -984,13 +1016,22 @@ footer div a {
         display: block;
     }
 
+    #accueil .caroussel {
+        height: 350px;
+    }
+
     #accueil .caroussel .gallery-cell {
         width: 100%;
         height: 300px;
     }
 
+    #accueil .voir-plus {
+        margin: 20px 0;
+    }
+
     #accueil .list-produits .img-ronde {
         width: 150px;
+        height: 150px;
     }
 
     #accueil .list-produits .nom-produit {
@@ -1063,30 +1104,35 @@ footer div a {
         flex-direction: column;
     }
 
+    footer {
+        height: 300px;
+        padding: 5px;
+    }
+
+    footer a {
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+    footer div span {
+        display: none;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
+
+    footer div a {
+        margin: 5px 0;
+    }
+
+    footer .follow {
+        font-size: 12px;
+    }
+
+    footer .copyright {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
 }
-
-
-
-/* @media (max-width: 600px) {
-    Styles pour les écrans de 5 à 7 pouces
-}
-
-@media (max-width: 1024px) {
-    Styles pour les écrans de 14 pouces
-}
-
-@media (max-width: 1366px) {
-    Styles pour les écrans de 15 pouces
-}
-
-@media (max-width: 1440px) {
-    Styles pour les écrans de 16 pouces
-}
-
-@media (max-width: 1600px) {
-    Styles pour les écrans de 17 pouces
-}
-
-@media (max-width: 1920px) {
-    Styles pour les écrans de 18 pouces
-} */

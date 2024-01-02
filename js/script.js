@@ -1,12 +1,13 @@
 $(document).ready(function () {
 
-    $("#modal").hide();
+    $("#modal").addClass("hidden");
+    $('section:not(#accueil)').addClass('hidden');
 
-    // ************** Barre de navigation ******************
+    // ************** Navigation ******************
 
     $('#icon').on('click', () => {
         $('#nav-bars-icon').toggleClass('fa-bars fa-close');
-    })
+    });
 
     $('nav ul li a').on('click', function () {
         $('nav ul li a').removeClass('active');
@@ -18,40 +19,62 @@ $(document).ready(function () {
     });
 
 
+    $('.link-section').on('click', function () {
+        var sectionCible = $(this).data("section");
+        $('section:not(#' + sectionCible + ')').addClass('hidden');
+        $('#' + sectionCible).removeClass('hidden');
+        if (screen.width < 1360) {
+            $('#icon').click();
+        }
+    });
+
     // ************** Produits ******************
 
-    $('.list-produits-type').css("min-height", screen.height - ($("footer").height() * 4 - 38));
+    $('.list-produits-type-inox').css("min-height", screen.height - ($("footer").height() * 4 - 16));
+    $('.list-produits-type-sol').css("min-height", screen.height - ($("footer").height() * 4 - 16));
+    $('.list-produits-type-parois').css("min-height", screen.height - ($("footer").height() * 4 - 16));
+    $('.list-produits-type-mc').css("min-height", screen.height - ($("footer").height() * 4 - 16));
+    $('.contact-content').css("min-height", screen.height - ($("footer").height() * 3 - 8));
 
-    $('.image-zoom').click(function () {
-        $('#modal').show().toggleClass('animate');
-        $('.overflow').removeClass("hidden");
-        $("#modal img").attr('src', $(this).find('img').attr('src'));
-        $("#modal p").html($(this).find('p').text());
+    $(".overflow, #modal i").on('click', function () {
+        $(".overflow, #modal").addClass("hidden").removeClass("active");
     });
 
-    $(".overflow, #modal i").click(function () {
-        $(".overflow").addClass("hidden");
-        $('#modal').toggleClass('animate').hide(50);
-    });
-
-    $(".btn-filtre").click(function () {
+    $(".btn-filtre").on('click', function () {
         $(".btn-filtre").removeClass("active");
         $(this).addClass("active");
-        var categorie = $(this).data("filter");
-        $('.carte-produit').each(function () {
-            if ($(this).data("categorie") != categorie) {
-                $(this).addClass('hidden');
-            }
-            else {
-                $(this).removeClass('hidden');
-            }
-        });
+        var filtre = $(this).data("filter");
+        var produit = $(this).data("produit");
+        console.log('filtre => ' + filtre);
+        console.log('produit => ' + produit);
+        if (produit == "sol") {
+            console.log('On est dans les sols');
+            $('.carte-produit-sol').each(function () {
+                if ($(this).data("categorie") != filtre) {
+                    $(this).addClass('hidden');
+                }
+                else {
+                    $(this).removeClass('hidden');
+                }
+            });
+        }
+        else if (produit == "paroi") {
+            $('.carte-produit-paroi').each(function () {
+                if ($(this).data("categorie") != filtre) {
+                    $(this).addClass('hidden');
+                }
+                else {
+                    $(this).removeClass('hidden');
+                }
+            });
+        }
+
     });
 
     // ************** Realisation ******************
 
     $('.gallery-img').on('click', function () {
-        $('#modal').show().toggleClass('animate');
+        $('#modal').removeClass("hidden").addClass('animate');
         $('.overflow').removeClass("hidden");
         $("#modal img").attr('src', $(this).attr('src'));
         $("#modal p").html("Réalisation");
