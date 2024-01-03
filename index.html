@@ -38,14 +38,6 @@
 
     </header>
     <main>
-        <div class="overflow hidden"></div>
-        <div id="modal">
-            <div class="image-modal-header">
-                <p></p>
-                <i style="cursor: pointer;" class="fa fa-close"></i>
-            </div>
-            <img loading="lazy" src="">
-        </div>
         <section id="accueil">
             <div class="cover"></div>
             <div class="content">
@@ -271,21 +263,13 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let inox = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit-inox image-zoom" data-categorie="${inox.categorie}">
-                                    <img loading="lazy" src="${inox.img}" alt="${inox.categorie}" />
+                                <div class="carte-produit-inox" data-categorie="${inox.categorie}">
+                                    <a href="${inox.img}"><img loading="lazy" src="${inox.img}" alt="${inox.categorie}" /></a>
                                     <p>${inox.libelle}</p>
                                 </div>
                                 `;
                             }
                             $(".list-produits-type-inox").html(cardProduit);
-
-                            $('.image-zoom').click(function () {
-                                $('#modal').removeClass("hidden").addClass('animate');
-                                $('.overflow').removeClass("hidden");
-                                $("#modal img").attr('src', $(this).find('img').attr('src'));
-                                $("#modal p").html($(this).find('p').text());
-                            });
-
                         }).catch(err => {
                             $(".list-produits-type-inox").html("<p> Une erreur est survenue lors de la récupération des inox, veuillez rééssayer plus tard. </p>");
                         })
@@ -321,21 +305,13 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let sol = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit-sol image-zoom" data-categorie="${sol.categorie}">
-                                    <img loading="lazy" src="${sol.img}" alt="${sol.categorie}" />
+                                <div class="carte-produit-sol" data-categorie="${sol.categorie}">
+                                    <a href="${sol.img}"><img loading="lazy" src="${sol.img}" alt="${sol.categorie}" /></a>
                                     <p>${sol.libelle}</p>
                                 </div>
                                 `;
                             }
                             $(".list-produits-type-sol").html(cardProduit);
-
-                            $('.image-zoom').click(function () {
-                                $('#modal').removeClass("hidden").addClass('animate');
-                                $('.overflow').removeClass("hidden");
-                                $("#modal img").attr('src', $(this).find('img').attr('src'));
-                                $("#modal p").html($(this).find('p').text());
-                            });
-
                             $('.carte-produit-sol').each(function () {
                                 if ($(this).data("categorie") != "stratifié") {
                                     $(this).addClass('hidden');
@@ -372,21 +348,13 @@
                             for (let i = 0; i < donnees.length; i++) {
                                 let parois = donnees[i];
                                 cardProduit += `
-                                <div class="carte-produit-paroi image-zoom" data-categorie="${parois.categorie}">
-                                    <img loading="lazy" src="${parois.img}" alt="${parois.categorie}" />
+                                <div class="carte-produit-paroi" data-categorie="${parois.categorie}">
+                                    <a href="${parois.img}"><img loading="lazy" src="${parois.img}" alt="${parois.categorie}" /></a>
                                     <p>${parois.libelle}</p>
                                 </div>
                                 `;
                             }
                             $(".list-produits-type-paroi").html(cardProduit);
-
-                            $('.image-zoom').click(function () {
-                                $('#modal').removeClass("hidden").addClass('animate');
-                                $('.overflow').removeClass("hidden");
-                                $("#modal img").attr('src', $(this).find('img').attr('src'));
-                                $("#modal p").html($(this).find('p').text());
-                            });
-
                             $('.carte-produit-paroi').each(function () {
                                 if ($(this).data("categorie") != "stratifié") {
                                     $(this).addClass('hidden');
@@ -408,14 +376,17 @@
                     <p>Nos mains courantes sont toutes en inox de diamètre 42.</p>
                 </div>
                 <div class="list-produits-type-mc">
-                    <div class="carte-produit-mc image-zoom">
-                        <img loading="lazy" src="./img/produits/mc/mc1.webp" alt="main courante">
+                    <div class="carte-produit-mc">
+                        <a href="./img/produits/mc/mc1.webp"><img loading="lazy" src="./img/produits/mc/mc1.webp"
+                                alt="main courante"></a>
                     </div>
-                    <div class="carte-produit-mc image-zoom">
-                        <img loading="lazy" src="./img/produits/mc/mc2.webp" alt="main courante">
+                    <div class="carte-produit-mc">
+                        <a href="./img/produits/mc/mc2.webp"><img loading="lazy" src="./img/produits/mc/mc2.webp"
+                                alt="main courante"></a>
                     </div>
-                    <div class="carte-produit-mc image-zoom">
-                        <img loading="lazy" src="./img/produits/mc/mc3.webp" alt="main courante">
+                    <div class="carte-produit-mc">
+                        <a href="./img/produits/mc/mc3.webp"><img loading="lazy" src="./img/produits/mc/mc3.webp"
+                                alt="main courante"></a>
                     </div>
                 </div>
             </div>
@@ -425,36 +396,44 @@
             <div class="container">
                 <div class="gallery">
                     <figure class="gallery-item gallery-item-1">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_10.webp" alt="Gallery image 1"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_10.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_10.webp" alt="Gallery image 1"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-2">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_13.webp" alt="Gallery image 2"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_13.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_13.webp" alt="Gallery image 2"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-3">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_1.webp" alt="Gallery image 3"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_1.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_1.webp" alt="Gallery image 3"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-4">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_15.webp" alt="Gallery image 4"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_15.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_15.webp" alt="Gallery image 4"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-5">
-                        <img loading="lazy" src="./img/realisations/cab_exterieur_2.webp" alt="Gallery image 5"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_exterieur_2.webp"><img loading="lazy"
+                                src="./img/realisations/cab_exterieur_2.webp" alt="Gallery image 5"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-6">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_6.webp" alt="Gallery image 3"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_6.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_6.webp" alt="Gallery image 3"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-7">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_9.webp" alt="Gallery image 4"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_9.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_9.webp" alt="Gallery image 4"
+                                class="gallery-img"></a>
                     </figure>
                     <figure class="gallery-item gallery-item-8">
-                        <img loading="lazy" src="./img/realisations/cab_interieur_2.webp" alt="Gallery image 5"
-                            class="gallery-img">
+                        <a href="./img/realisations/cab_interieur_2.webp"><img loading="lazy"
+                                src="./img/realisations/cab_interieur_2.webp" alt="Gallery image 5"
+                                class="gallery-img"></a>
                     </figure>
                 </div>
             </div>

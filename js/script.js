@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    $("#modal").addClass("hidden");
     $('section:not(#accueil)').addClass('hidden');
 
     // ************** Navigation ******************
@@ -36,10 +34,6 @@ $(document).ready(function () {
     $('.list-produits-type-mc').css("min-height", screen.height - ($("footer").height() * 4 - 16));
     $('.contact-content').css("min-height", screen.height - ($("footer").height() * 3 - 8));
 
-    $(".overflow, #modal i").on('click', function () {
-        $(".overflow, #modal").addClass("hidden").removeClass("active");
-    });
-
     $(".btn-filtre").on('click', function () {
         $(".btn-filtre").removeClass("active");
         $(this).addClass("active");
@@ -68,16 +62,5 @@ $(document).ready(function () {
                 }
             });
         }
-
     });
-
-    // ************** Realisation ******************
-
-    $('.gallery-img').on('click', function () {
-        $('#modal').removeClass("hidden").addClass('animate');
-        $('.overflow').removeClass("hidden");
-        $("#modal img").attr('src', $(this).attr('src'));
-        $("#modal p").html("Réalisation");
-    });
-
 })

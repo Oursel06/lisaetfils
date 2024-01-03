@@ -89,63 +89,6 @@ hr {
 }
 
 
-/* Modal */
-
-.overflow {
-    position: fixed;
-    z-index: 4;
-    opacity: .5;
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-#modal {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 100%;
-    z-index: 5;
-    background: black;
-    opacity: 0;
-    transition: all 2s;
-    box-shadow: 0 1px 20px 0px rgba(50, 50, 50, 0.5);
-}
-
-#modal.animate {
-    opacity: 1;
-}
-
-#modal .image-modal-header {
-    position: absolute;
-    width: 100%;
-    background: #1f5da6;
-    color: white;
-    letter-spacing: 3px;
-    padding: 4px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
-#modal .image-modal-header i:hover {
-    cursor: pointer;
-}
-
-#modal img {
-    position: absolute;
-    max-width: 80%;
-    bottom: 0;
-    height: 95%;
-    z-index: -1;
-}
-
-
 /* Caroussel */
 
 .flickity-enabled {
