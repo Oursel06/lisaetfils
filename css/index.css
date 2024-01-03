@@ -327,11 +327,27 @@ ul li a.active {
 }
 
 #accueil .cover {
-    background: url("../img/couverture.jpg");
+    background: url("../img/couverturem2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    text-align: center;
+}
+
+#accueil .cover .encadre {
+    position: relative;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    top: 40%;
+    padding: 30px 10px;
+    background: rgba(20, 20, 20, .2);
+}
+
+#accueil .cover .encadre p {
+    font-size: 50px;
+    color: white;
 }
 
 #accueil .accueil-partie-title {
@@ -887,6 +903,10 @@ footer .copyright {
 
 @media screen and (max-width: 1366px) {
 
+    #accueil .cover .encadre p {
+        font-size: 35px;
+    }
+
     #about .presentation {
         height: 350px;
     }
@@ -957,6 +977,15 @@ footer .copyright {
 
     #checkbox:checked~ul {
         display: block;
+    }
+
+    #accueil .cover .encadre {
+        top: 45%;
+        width: 90%;
+    }
+
+    #accueil .cover .encadre p {
+        font-size: 18px;
     }
 
     #accueil .caroussel {
