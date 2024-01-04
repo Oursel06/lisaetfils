@@ -21,6 +21,8 @@ $(document).ready(function () {
         var sectionCible = $(this).data("section");
         $('section:not(#' + sectionCible + ')').addClass('hidden');
         $('#' + sectionCible).removeClass('hidden');
+        $('nav ul li a').removeClass('active');
+        $('nav ul li a[data-section=' + sectionCible + ']').addClass('active');
         if (screen.width < 1360) {
             $('#icon').click();
         }
