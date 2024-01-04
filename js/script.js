@@ -7,6 +7,17 @@ $(document).ready(function () {
         $('#nav-bars-icon').toggleClass('fa-bars fa-close');
     });
 
+    $(document).on('click', function (e) {
+        if ($('#nav-bars-icon').hasClass('fa-close')) {
+            isNavBarIcon = $(e.target).attr('id') == 'nav-bars-icon' ? true : false;
+            isCheckbox = $(e.target).attr('id') == 'checkbox' ? true : false;
+            isIcon = $(e.target).attr('id') == 'icon' ? true : false;
+            if (isNavBarIcon == false && isCheckbox == false && isIcon == false) {
+                $('#icon').click();
+            }
+        }
+    });
+
     $('nav ul li a').on('click', function () {
         $('nav ul li a').removeClass('active');
         $(this).addClass('active');
@@ -16,16 +27,12 @@ $(document).ready(function () {
         $('.dropdown-content').toggle();
     });
 
-
     $('.link-section').on('click', function () {
         var sectionCible = $(this).data("section");
         $('section:not(#' + sectionCible + ')').addClass('hidden');
         $('#' + sectionCible).removeClass('hidden');
         $('nav ul li a').removeClass('active');
         $('nav ul li a[data-section=' + sectionCible + ']').addClass('active');
-        if (screen.width < 1360) {
-            $('#icon').click();
-        }
     });
 
     // ************** Produits ******************
