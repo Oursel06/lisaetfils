@@ -242,6 +242,10 @@ nav {
     z-index: 2;
 }
 
+nav .logo img {
+    width: 200px;
+}
+
 ul {
     list-style: none;
 }
@@ -946,6 +950,10 @@ footer .copyright {
 
     nav {
         opacity: 1;
+    }
+
+    nav .logo img {
+        width: 100px;
     }
 
     ul {
