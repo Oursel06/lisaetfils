@@ -100,5 +100,11 @@
         "libelle": "Inox larmé",
         "img": "../img/produits/sols/sol_inox_larme.webp",
         "categorie": "inox"
+    },
+    {
+        "id": 18,
+        "libelle": "Chiaro Embra",
+        "img": "../img/produits/sols/granito/chiaro_embra.webp",
+        "categorie": "granito"
     }
 ]
